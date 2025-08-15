@@ -18,6 +18,4 @@ class Cafe:
 
         if not visitor.get("wearing_a_mask", False):
             raise NotWearingMaskError(visitor.get("name", "Visitor"))
-
-        else:
-            return f"Welcome to {self.name}"
+        return f"Welcome to {self.name}"
