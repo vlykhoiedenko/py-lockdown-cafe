@@ -21,6 +21,6 @@ class OutdatedVaccineError(VaccineError):
 
 
 class NotWearingMaskError(Exception):
-    def __init__(self, visitor_name: str):
+    def __init__(self, visitor_name: str) -> None:
         self.visitor_name = visitor_name
         super().__init__(f"{visitor_name} is not wearing a mask.")
